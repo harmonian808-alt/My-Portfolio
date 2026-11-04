@@ -2,40 +2,50 @@
 <html lang="en">
 <head>
  <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0"> <meta name="description" content="Portfolio of Bethlehem Hailu, Software Engineering student and aspiring web developer in Addis Ababa."> 
+<meta name="keywords" content="Bethlehem Hailu, portfolio, software engineering, web  developer, HTML"> 
+<meta name="author" content="Bethlehem Hailu"> 
+
  <title>Bethlehem Hailu | Portfolio</title>
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
 </head>
 <body>
+ <header>
  <h1>Bethlehem Hailu</h1>
  <img src="images/profile.jpg" alt="Portrait of Bethlehem Hailu"
  title="Bethlehem Hailu" width="200" height="200">
-
  <p>Software Engineering student and aspiring web developer.</p>
- <p>
+ <nav>
  <a href="#about">About</a> |
  <a href="#skills">Skills</a> |
  <a href="#projects">Projects</a> |
  <a href="#education">Education</a> |
  <a href="#contact">Contact</a> |
  <a href="projects.html">All Projects</a>
-</p>
- <hr>
-
- <h2 id="about">About Me</h2>
+</nav>
+ </header>
+ <main>
+ <section id="about">
+    <h2>About Me</h2>
  <p>I am a 3<sup>rd</sup> year <strong>Software Engineering</strong> student.
  I <em>really</em> enjoy building websites, and my current goal is to
  <mark>become a full-stack web developer</mark>.</p>
 <p>Languages I have used: <b>Python</b>, <b>C++</b> and <i>a little</i> 
 JavaScript.</p>
 <p>Fun fact: I drink 2 litres of H<sub>2</sub>O while coding every day.</p>
- <hr>
+</section>
+
+<aside>
 <h2>What Inspires Me</h2>
 <blockquote>
  “The best way to predict the future is to invent it.” — Alan Kay
 </blockquote>
 <p>My teacher always says <q>practice beats theory</q>, so I code every day.</p>
 <p>Book I am reading: <cite>Clean Code</cite> by Robert C. Martin</p>
- <h2 id="skills">Skills</h2>
+</aside>
+
+<section id="skills">
+<h2>Skills</h2> 
 <ul>
  <li>Programming Languages
  <ul type="square">
@@ -58,7 +68,7 @@ JavaScript.</p>
  </ul>
  </li>
 </ul>
- <hr>
+ 
  <h3>My Learning Roadmap</h3>
 <ol type="1">
  <li>HTML structure and content</li>
@@ -67,6 +77,7 @@ JavaScript.</p>
  <li>PHP and databases</li>
  <li>Deploy my portfolio online</li>
 </ol>
+
 <h3>Tools I Use</h3>
 <dl>
  <dt>VS Code</dt>
@@ -76,19 +87,31 @@ JavaScript.</p>
  <dt>Git and GitHub</dt>
  <dd>Saves versions of my code and shares my projects online.</dd>
 </dl>
- <h2 id="projects">Projects</h2>
- <h3 id="calculator">Simple Calculator</h3>
+</section>
+
+<section id="projects">
+ <h2>Projects</h2>
+ <article id="calculator">
+ <h3>Simple Calculator</h3>
 <img src="images/project-calculator.png" alt="Screenshot of the calculator showing 12 
 + 30 = 42"
  width="400" height="250">
  <p>A calculator that adds, subtracts, multiplies and divides.</p>
- <h3 id="library">Library Management System</h3>
- <img src="images/project-library.png" alt="Screenshot of the calculator showing 12 
-+ 30 = 42"
+ </article>
+
+ <article id="library">
+ <h3>Library Management System</h3>
+ <img src="images/project-library.png" alt="Screenshot of the library system"
  width="400" height="250">
  <p>A console program for borrowing and returning books.</p>
- <h3 id="budgettracker">Budget Tracker</h3>
+ </article>
+
+ <article id="budgettracker">
+ <h3>Budget Tracker</h3>
  <p>A tracker that makes calculating money that is spent and gained easier!</p>
+ </article>
+
+ <article>
  <h3>My First Program</h3>
 <p>The first thing I wrote in Python was <code>print("Hello, World!")</code>.
  Later I wrote this loop:</p>
@@ -120,12 +143,16 @@ int main ()  {
     return 0;
 }
 </code></pre>
+</article>
+
  <p><a href="projects.html">See all my projects →</a></p>
- <hr>
-<h2 id="education">Education</h2>
+</section>
+
+<section id="education">
+<h2>Education</h2>
  <h3>BSc in Software Engineering</h3>
  <p>Addis Ababa Science and Technology University, 2023 – present</p>
- <hr>
+ 
  <table border="1" cellpadding="8" cellspacing="0">
  <caption>Academic Record — BSc in Software Engineering</caption>
  <thead>
@@ -184,7 +211,10 @@ int main ()  {
  </tr>
  </tfoot>
 </table>
- <h2 id="contact">Contact</h2>
+</section>
+
+<section id="contact">
+ <h2>Contact</h2>
 <p>Address:<br>Addis Ababa,<br>Ethiopia</p>
 <p>Email: <a href="mailto:bethlehemhailu86@gmail.com">bethlehemhailu86@gmail.com</a></p>
 <p>Phone: <a href="tel:+251963982771">+251 963 982 771</a></p>
@@ -203,5 +233,10 @@ href="https://www.linkedin.com/in/bethlehemha" alt="LinkedIn">
  <area shape="rect" coords="420,40,580,160" 
 href="mailto:bethlehemhailu86@gmail.com" alt="Email">
 </map>
+</section>
+ </main>
+ <footer> 
+ <p>Copyright 2026 Bethlehem Hailu. All rights reserved.</p> 
+</footer> 
 </body>
 </html>
