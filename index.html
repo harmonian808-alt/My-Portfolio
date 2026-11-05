@@ -23,7 +23,7 @@
    <p>I am available for internships and freelance web projects from
    December 2026.</p>
    <p><a href="#contact">Send me a message</a>
-   or <a href="files/cv.pdf" download>download my CV</a>.</p>
+   or <a href="files/cv.pdf" download>download my<abbr title="Curriculum Vitae">CV</abbr></a>.</p>
    <button type="button"
     onclick="document.getElementById('hireDialog').close()">Close</button>
   </dialog>
@@ -45,6 +45,8 @@
 <p>Languages I have used: <b>Python</b>, <b>C++</b> and <i>a little</i> 
 JavaScript.</p>
 <p>Fun fact: I drink 2 litres of H<sub>2</sub>O while coding every day.</p>
+   <p>My favourite tag is &lt;main&gt;, because it tells the browser
+   where the important content is &amp; helps screen readers.</p>
    <h3>Hear my introduction</h3>
    <audio controls>
     <source src="media/intro.mp3" type="audio/mpeg">
@@ -79,7 +81,7 @@ JavaScript.</p>
  </li>
  <li>Web Development
  <ul type="circle">
- <li>HTML</li>
+ <li><abbr title="HyperText Markup Language">HTML</abbr></li>
  <li>CSS (learning)</li>
  <li>JavaScript (next)</li>
  </ul>
@@ -165,18 +167,18 @@ JavaScript.</p>
 int main ()  {
     int a, b;
 
-    cout << "Enter two numbers: ";
-    cin >> a >> b;
+    cout &lt;&lt; "Enter two numbers: ";
+    cin &gt;&gt; a &gt;&gt; b;
 
-    for (int i = 0; i < 1; i++) {
-        if (a > b) {
-            cout << a << " is greater than " << b;
+    for (int i = 0; i &lt; 1; i++) {
+        if (a &gt; b) {
+            cout &lt;&lt; a &lt;&lt; " is greater than " &lt;&lt; b;
         }
-        else if (a < b) {
-            cout << b << " is greater than " << a;
+        else if (a &lt; b) {
+            cout &lt;&lt; b &lt;&lt; " is greater than " &lt;&lt; a;
         }
         else {
-            cout << "Both numbers are equal.";
+            cout &lt;&lt; "Both numbers are equal.";
         }
     }
 
@@ -184,19 +186,18 @@ int main ()  {
 }
 </code></pre>
 </article>
-
  <p><a href="projects.html">See all my projects →</a></p>
 </section>
-<p>
+<section id="education">
+<h2>Education</h2>
+ <h3>BSc in Software Engineering</h3>
+ <p><abbr title="Addis Ababa Science and Technology University">AASTU</abbr>, 
+    <time datetime="2023-09">September 2023</time> – present</p>
+    <p>
     <label for="degree">Degree progress:</label>
     <progress id="degree" value="60" max="100">60%</progress>
     60%
    </p>
-<section id="education">
-<h2>Education</h2>
- <h3>BSc in Software Engineering</h3>
- <p>Addis Ababa Science and Technology University, 2023 – present</p>
- 
  <table border="1" cellpadding="8" cellspacing="0">
  <caption>Academic Record — BSc in Software Engineering</caption>
  <thead>
@@ -261,7 +262,7 @@ int main ()  {
  <h2>Contact</h2>
 <p>Address:<br>Addis Ababa,<br>Ethiopia</p>
 <p>Email: <a href="mailto:bethlehemhailu86@gmail.com">bethlehemhailu86@gmail.com</a></p>
-<p>Phone: <a href="tel:+251963982771">+251 963 982 771</a></p>
+<p>Phone: <a href="tel:+251963982771">+251&nbsp;963&nbsp;982&nbsp;771</a></p>
 <p>GitHub: <a href="https://github.com/harmonian808-alt">github.com/harmonian808-alt</a></p>
 <p>LinkedIn: <a 
 href="https://www.linkedin.com/in/bethlehemha">linkedin.com/in/bethlehemha</a></p>
@@ -356,8 +357,9 @@ href="mailto:bethlehemhailu86@gmail.com" alt="Email">
 </form>
 </section>
  </main>
- <footer> 
- <p>Copyright 2026 Bethlehem Hailu. All rights reserved.</p> 
-</footer> 
+ <footer>
+  <p>&copy; 2026 Bethlehem Hailu. All rights reserved.</p>
+  <p>Last updated: <time datetime="2026-11-05">5 November 2026</time></p>
+ </footer> 
 </body>
 </html>
