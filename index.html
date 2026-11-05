@@ -15,6 +15,18 @@
  <img src="images/profile.jpg" alt="Portrait of Bethlehem Hailu"
  title="Bethlehem Hailu" width="200" height="200">
  <p>Software Engineering student and aspiring web developer.</p>
+   <button type="button"
+   onclick="document.getElementById('hireDialog').showModal()">Hire me</button>
+
+  <dialog id="hireDialog">
+   <h2>Available for internships</h2>
+   <p>I am available for internships and freelance web projects from
+   December 2026.</p>
+   <p><a href="#contact">Send me a message</a>
+   or <a href="files/cv.pdf" download>download my CV</a>.</p>
+   <button type="button"
+    onclick="document.getElementById('hireDialog').close()">Close</button>
+  </dialog>
  <nav>
  <a href="#about">About</a> |
  <a href="#skills">Skills</a> |
@@ -79,7 +91,24 @@ JavaScript.</p>
  </ul>
  </li>
 </ul>
- 
+ <h3>Skill Levels</h3>
+   <p>
+    <label for="lvl-html">HTML</label>
+    <meter id="lvl-html" value="0.7" min="0" max="1">70%</meter>
+   </p>
+   <p>
+    <label for="lvl-python">Python</label>
+    <meter id="lvl-python" value="0.4" min="0" max="1">40%</meter>
+   </p>
+   <p>
+    <label for="lvl-js">JavaScript</label>
+    <meter id="lvl-js" value="0.2" min="0" max="1" low="0.3" high="0.7" optimum="1">20%</meter>
+   </p>
+    <p>
+    <label for="lvl-c">C++</label>
+    <meter id="lvl-c" value="0.5" min="0" max="1">50%</meter>
+   </p>
+
  <h3>My Learning Roadmap</h3>
 <ol type="1">
  <li>HTML structure and content</li>
@@ -158,7 +187,11 @@ int main ()  {
 
  <p><a href="projects.html">See all my projects →</a></p>
 </section>
-
+<p>
+    <label for="degree">Degree progress:</label>
+    <progress id="degree" value="60" max="100">60%</progress>
+    60%
+   </p>
 <section id="education">
 <h2>Education</h2>
  <h3>BSc in Software Engineering</h3>
